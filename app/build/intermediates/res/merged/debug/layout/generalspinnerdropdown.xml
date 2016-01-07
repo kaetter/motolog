@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@color/databackgroundColor"
+    android:gravity="left|center_vertical"
+    android:textColor="@color/tabtextcolor"
+    android:textSize="@dimen/text_large" />
+<!-- From: file:/C:/Users/user/StudioProjects/MotorcycleMaintenanceLog_work/app/src/main/res/layout/generalspinnerdropdown.xml -->

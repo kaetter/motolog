@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/tabs_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        class="com.kaetter.motorcyclemaintenancelog.TabsFragment"
+        android:tag="tabs_fragment" />
+
+</LinearLayout><!-- From: file:/C:/Users/user/StudioProjects/MotorcycleMaintenanceLog_work/app/src/main/res/layout/main.xml -->

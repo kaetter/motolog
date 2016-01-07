@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="word_bar">#FF0000</color>
+    <color name="number_bar">#00FF00</color>
+    <color name="textColor">#0099CC</color>
+    <color name="backgroundColor">#87B0DE</color>
+    <color name="textColor1">#3d3028</color>
+    <color name="overdueColor">#cc2a36</color>
+    <color name="remBackroundcolor">#9FF5B6</color>
+    <color name="confBackroundcolor">#F5BC9F</color>
+    <color name="tabselected">#f8af1e</color>
+    <color name="tabunselected">#363636</color>
+    <color name="tabpressed">#e1e1e1</color>
+    <color name="tabborder">#898989</color>
+    <color name="tabtextcolor">#c2c2c2</color>
+    <color name="databackgroundColor">#333333</color>
+    <color name="oilcolor">#7aac29</color>
+    <color name="othercolor">#f9b11f</color>
+    <color name="brakecolor">#e9582f</color>
+    <color name="baterycolor">#087393</color>
+    <color name="fuelcolor">#000000</color>
+    <color name="chaincolor">#93b79c</color>
+     <color name="cashcolor">#12CC6F</color>
+
+</resources>

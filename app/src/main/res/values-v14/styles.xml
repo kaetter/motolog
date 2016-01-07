@@ -1,0 +1,31 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:textColor">@color/tabtextcolor</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@drawable/spinner_selector</item>
+        <item name="android:spinnerMode">dialog</item>
+    </style>
+
+    <style name="DateStyle" parent="@android:style/Widget.Holo.DatePicker">
+        <item name="android:divider">@color/tabselected</item>
+    </style>
+
+    <style name="EditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edittext_selector</item>
+    </style>
+
+        <style name="PrefsTheme" parent="@android:style/Theme.Black">
+        <item name="android:windowBackground">@color/tabtextcolor</item>
+    </style>
+    
+</resources>

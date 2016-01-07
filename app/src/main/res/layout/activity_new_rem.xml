@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/databackgroundColor"
+    android:orientation="vertical"
+    android:tag="newrem" >
+
+    <TextView
+        android:id="@+id/reminderDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This will remind you to..."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/tabselected" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9" >
+
+        <Spinner
+            android:id="@+id/mainttypespinner"
+            style="@style/SpinnerStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             />
+
+        <Spinner
+            android:id="@+id/maintelemspinner"
+            style="@style/SpinnerStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainttypespinner"
+            />
+
+        <TextView
+            android:id="@+id/every"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/maintelemspinner"
+            android:layout_marginLeft="10dp"
+            android:ems="4"
+            android:paddingTop="10dp"
+            android:text="every"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/datecheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/every"
+            android:button="@drawable/checkbox_selector"
+            android:gravity="left"
+            android:text="Date?"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/intervalo"
+            style="@style/EditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/maintelemspinner"
+            android:layout_toRightOf="@id/every"
+            android:hint="interval in km&apos;s"
+            android:inputType="number"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/tabtextcolor" />
+
+        <Spinner
+            android:id="@+id/interval"
+            style="@style/SpinnerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/datecheckbox"
+            android:layout_below="@id/maintelemspinner"
+            android:paddingRight="10dp"
+            android:layout_toRightOf="@id/every" />
+
+        <Spinner
+            android:id="@+id/intervaltype"
+            style="@style/SpinnerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/interval"
+            android:layout_below="@id/maintelemspinner"
+            android:layout_toRightOf="@id/interval" />
+
+        <TextView
+            android:id="@+id/starting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datecheckbox"
+            android:text="starting "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/odometer"
+            style="@style/EditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/starting"
+            android:layout_below="@id/intervalo"
+            android:layout_toRightOf="@id/starting"
+            android:hint="starting interval"
+            android:inputType="number"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/tabtextcolor" />
+
+        <TextView
+            android:id="@+id/kmLabelrem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/odometer"
+            android:layout_alignBottom="@id/odometer"
+            android:layout_below="@id/intervalo"
+            android:layout_toRightOf="@id/odometer"
+            android:gravity="bottom"
+            android:paddingLeft="8dp"
+            android:text="km"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <DatePicker
+            android:id="@+id/datepickrem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/starting"
+            android:layout_toRightOf="@id/starting"
+            android:calendarViewShown="false"
+            android:scaleX="0.9"
+            android:scaleY="0.9" >
+        </DatePicker>
+
+        <EditText
+            android:id="@+id/editdetails"
+            style="@style/EditTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:hint="details..."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/tabtextcolor" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/CreateRemButton"
+        style="@style/BlackButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_weight="0.1"
+        android:text="Create New Rem" />
+
+</LinearLayout>

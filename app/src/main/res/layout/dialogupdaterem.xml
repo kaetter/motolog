@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/update_rem_dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/databackgroundColor"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/remElemString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titlul"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/tabselected" />
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/tabselected" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/detailsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/remElemDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/detailsLabel"
+            android:layout_below="@id/maintElemDate"
+            android:layout_toRightOf="@id/detailsLabel"
+            android:paddingBottom="4dp"
+            android:ellipsize="end"
+            android:text="memo" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remElemDetails" >
+
+            <Button
+                android:id="@+id/updateButton"
+                style="@style/BlackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Update" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/tabselected" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                style="@style/BlackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delete" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/tabselected" />
+
+            <Button
+                android:id="@+id/doneButton"
+                style="@style/BlackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Done" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/tabselected" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                style="@style/BlackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

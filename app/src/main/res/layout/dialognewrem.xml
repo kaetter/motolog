@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/update_dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/databackgroundColor"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/tabselected" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/reminderdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/tabselected" />
+
+        <TextView
+            android:id="@+id/divider2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/reminderdescription"
+            android:background="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/nextIntervalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider2"
+            android:text="Next interval: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nextInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider2"
+            android:layout_toRightOf="@id/nextIntervalLabel"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/descriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nextInterval"
+            android:paddingTop="4dp"
+            android:text="Details:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/descriptionLabel"
+            android:layout_toRightOf="@id/descriptionLabel"
+            android:layout_below="@id/nextInterval"
+            android:paddingTop="4dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/updateButton"
+                style="@style/BlackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+            
+                android:layout_weight="1"
+                android:text="Create" />
+
+            <TextView
+                android:id="@+id/divider3"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/tabselected" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                style="@style/BlackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+              
+                
+                android:layout_weight="1"
+                android:text="Cancel" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

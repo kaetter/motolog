@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/update_dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/databackgroundColor"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/maintElemString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titlul"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/tabselected" />
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/tabselected" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/dateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/maintElemDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dateLabel"
+            android:text="dateeee"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/odoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/maintElemDate"
+            android:paddingLeft="16dp"
+            android:text="ODO:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/odometerInDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/odoLabel"
+            android:gravity="right"
+            android:paddingLeft="8dp"
+            android:text="odometer"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/kmLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/odometerInDialog"
+            android:layout_toRightOf="@id/odometerInDialog"
+            android:paddingLeft="4dp"
+            android:text="km"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/maintElemDate"
+            android:paddingTop="4dp"
+            android:text="Details:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/maintElemDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/details"
+            android:layout_below="@id/maintElemDate"
+            android:layout_toRightOf="@id/details"
+            android:ellipsize="end"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:text="memo" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/maintElemDetails" >
+
+            <Button
+                android:id="@+id/updateButton"
+                style="@style/BlackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:layout_weight="1"
+                android:text="Update" />
+
+            <TextView
+                android:id="@+id/divider1"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/tabselected" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                style="@style/BlackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              
+            
+                android:layout_weight="1"
+                android:text="Delete" />
+
+            <TextView
+                android:id="@+id/divider2"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/tabselected" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                style="@style/BlackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.		
+        -->
+        <item name="android:textColor">@color/tabtextcolor</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+    </style>
+
+    <style name="BlackButton" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/buttonselector</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:height">38dp</item>
+        <item name="android:textColor">@color/tabtextcolor</item>
+        <item name="android:textSize">@dimen/text_default</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@drawable/spinner_selector</item>
+    </style>
+
+    <style name="EditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edittext_selector</item>
+    </style>
+
+    <style name="SpinnerDropDownItem">
+        <item name="android:background">@color/tabtextcolor</item>
+    </style>
+
+    <style name="PrefsTheme" parent="@android:style/Theme.Black">
+        <item name="android:windowBackground">@color/tabtextcolor</item>
+    </style>
+
+</resources>

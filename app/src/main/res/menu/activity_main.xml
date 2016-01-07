@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_filter"
+        android:orderInCategory="300"
+        android:showAsAction="always"
+        android:title="Filter"/> 
+
+        <item
+        android:id="@+id/menu_exportdb"
+        android:orderInCategory="200"
+        android:showAsAction="always"
+        android:title="Export Db"/> 
+    
+        <item
+        android:id="@+id/menu_importdb"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Import Db"/>
+        
+            <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="400"
+        android:showAsAction="always"
+        android:title="Settings"/> 
+    
+</menu>

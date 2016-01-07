@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Moto Log</string>
+    <string name="menu_settings">Settings</string>
+    <string name="FuelAmount">Fuel</string>
+    <string name="MaintElem">Maint<item>Maintain</item><item>Maintain</item><item>Maintain</item></string>
+    <string name="kmLabel">ODO:</string>
+    <string name="Mileage">Mileage</string>
+    <string name="Date">Date</string>
+    <string name="Odometer">Odometer</string>
+
+    <color name="LogTextColor">#551D55</color>
+    <color name="LogRowColor">#FFCCCC</color>
+
+    <string name="MileageShort">Mi:</string>
+    <string name="LOG">log</string>
+    <string name="REM">reminder</string>
+    <string name="CONF">config.</string>
+    <string name="NewLogCreation">New Log Entry &#8230;</string>
+    <string name="NewRemCreation">New Reminder &#8230;</string>
+    <string name="newlog_app">NewLog</string>
+    <string name="title_activity_new_log">NewLog</string>
+    <string name="title_activity_new_rem">NewRem</string>
+    <string name="title_activity_refuel">RefuelActivity</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_fuellydialog">FuellyDialog</string>
+    <string name="Details">Details</string>
+    <string name="metrics">km</string>
+    <string name="fuelUnit">L</string>
+    <string name="someString">SomeString</string>
+    <string name="priceperLitre">Mi:</string>
+
+    <string-array name="maintElemArray">
+        <item>Fuel</item>
+        <item>Chain</item>
+        <item>Oil</item>
+        <item>Brake</item>
+        <item>Battery</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="maintTypeArray">
+        <item>Refuel</item>
+        <item>Replace</item>
+        <item>Repair</item>
+        <item>Maintain</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="intervalNumberArray">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="intervalTypeArray">
+        <item>week</item>
+        <item>month</item>
+        <item>year</item>
+    </string-array>
+    <string-array name="intervalTypeArrayP">
+        <item>weeks</item>
+        <item>months</item>
+        <item>years</item>
+    </string-array>
+    <string-array name="pref_MileageType_entries">
+        <item>L/100km</item>
+        <item>MPG</item>
+        <item>L/km</item>
+        <item>km/L</item>
+    </string-array>
+    <string-array name="pref_MileageType_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="pref_CashType_entries">
+        <item>Price per unit (litre or gallon)</item>
+        <item>Price per fill-up</item>
+    </string-array>
+    <string-array name="pref_CashType_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="elemtype_preference_file_key">com.example.motorcylemaintenancelog.elemtype_preference_file_key</string>
+    <string name="interval_preference_file_key">com.example.motorcyclemaintenancelog.interval_preference_file_key</string>
+    <string name="elem_preference_file_key">com.example.motorcyclemaintenancelog.elem_preference_file_key</string>
+    <string name="general_preference_file_key">com.example.motorcyclemaintenancelog.elem_preference_file_key</string>
+
+</resources>

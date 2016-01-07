@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/databackgroundColor"
+    android:orientation="vertical"
+    tools:context=".MyListFragment" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/databackgroundColor"
+        android:gravity="center_horizontal"
+        android:text="General data"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/databackgroundColor" >
+
+        <TextView
+            android:id="@+id/bikename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bikenametext"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/dateofpurchaset"
+            android:background="@color/databackgroundColor"
+            android:gravity="left"
+            android:text="Bike name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/bikenametext"
+            style="@style/EditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dateofpurchaset"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/bikename"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/tabtextcolor" />
+
+        <TextView
+            android:id="@+id/dateofpur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dateofpurchaset"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bikename"
+            android:layout_toLeftOf="@+id/dateofpurchaset"
+            android:background="@color/databackgroundColor"
+            android:text="Date of purchase"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/dateofpurchaset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:height="50px"
+            android:layout_below="@id/bikenametext"
+            android:ems="10"
+            android:textSize="@dimen/text_default"
+            android:textColor="@color/tabtextcolor" />
+
+        <TextView
+            android:id="@+id/initialodometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/initialodometert"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/initialodometert"
+            android:layout_toLeftOf="@+id/dateofpurchaset"
+            android:background="@color/databackgroundColor"
+            android:gravity="center|left"
+            android:text="Initial Odo"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/initialodometert"
+            style="@style/EditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dateofpurchaset"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/dateofpurchaset"
+            android:layout_toRightOf="@id/initialodometer"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textColor="@color/tabtextcolor" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/otherdetails"
+            style="@style/EditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/initialodometert"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="otherdetails"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:textColor="@color/tabtextcolor" />
+
+        <LinearLayout
+            android:id="@+id/selectLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otherdetails"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10px" >
+
+            <TextView
+                android:id="@+id/fromLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/from"
+                android:layout_below="@id/otherdetails"
+                android:text="from:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/from"
+                style="@style/BlackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/otherdetails"
+                android:layout_toRightOf="@+id/fromLabel"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="12/04/2014" />
+
+            <TextView
+                android:id="@+id/toLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/to"
+                android:layout_below="@id/otherdetails"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/from"
+                android:paddingLeft="10px"
+                android:text="to:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/to"
+                style="@style/BlackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/otherdetails"
+                android:layout_toRightOf="@+id/toLabel"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="12/04/2014" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/totalLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectLinearLayout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10px" >
+
+            <TextView
+                android:id="@+id/totalLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="Total:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/totalcash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:paddingLeft="8px"
+                android:text="47660.5"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/totalcashlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:paddingLeft="8px"
+                android:text="$"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/totalkm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:paddingLeft="8px"
+                android:text="10000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/totalkmLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:paddingLeft="2dp"
+                android:text="km"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <LinearLayout
+                android:id="@+id/avgperunitlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/maintelemspinner"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/avgperkmlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/maintelemspinner"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/cashperkm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8px"
+                        android:text="100"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/cashperkmLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="$/km"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/avgperdayayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/maintelemspinner"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/cashperday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8px"
+                        android:text="100"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/cashpedayLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="$/day"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/cashperdayLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/entriesLayout"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+            
+			 <Spinner
+			     android:id="@+id/maintelemspinner"
+			     style="@style/SpinnerStyle"
+			     android:layout_width="150dp"
+			     android:layout_height="wrap_content"
+			      />
+
+            <TextView
+                android:id="@+id/cashperelementvalue"
+                 android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/maintelemspinner"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:text="" />
+            
+           <TextView
+               android:id="@+id/cashperelement"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/cashperelementvalue"
+                android:layout_centerVertical="true"
+               android:text="$ in"
+               android:textAppearance="?android:attr/textAppearanceSmall" />
+           
+            <TextView
+                android:id="@+id/countperelementvalue"
+                 android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cashperelement"
+                android:paddingLeft="8dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" 
+                android:singleLine="true"
+                android:text="0"/>
+            
+             <TextView
+               android:id="@+id/countperelementLabel"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/countperelementvalue"
+               android:layout_centerVertical="true"
+               android:paddingLeft="8dp"
+               android:text="entries"
+               android:textAppearance="?android:attr/textAppearanceSmall" />
+           
+            
+        </RelativeLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/entriesLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+ 			android:layout_below="@id/totalLinearLayout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/entriesLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.50"
+                android:paddingLeft="8px"
+                android:text="Number of entries:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/entries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.50"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/user/StudioProjects/MotorcycleMaintenanceLog_work/app/src/main/res/layout/logconf.xml -->

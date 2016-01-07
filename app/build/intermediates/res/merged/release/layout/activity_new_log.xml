@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newlogfragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/databackgroundColor"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Create new entry!"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/tabtextcolor" />
+
+    <TextView
+        android:id="@+id/maintelem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/maintelemspinner"
+        android:layout_below="@id/title"
+        android:gravity="center_vertical"
+        android:text="Maint Elem"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/tabtextcolor" />
+
+    <Spinner
+        android:id="@+id/maintelemspinner"
+        style="@style/SpinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/maintelem"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/mainttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mainttypespinner"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/maintelem"
+        android:layout_toStartOf="@id/maintelemspinner"
+        android:gravity="center_vertical"
+        android:text="Maint type"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/tabtextcolor" />
+
+    <Spinner
+        android:id="@+id/mainttypespinner"
+        style="@style/SpinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maintelemspinner"
+        android:layout_toRightOf="@id/mainttype" />
+
+    <TextView
+        android:id="@+id/divider1"
+        android:layout_width="1px"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/mainttypespinner"
+        android:layout_toRightOf="@id/mainttypespinner"
+        android:background="#DADADA"
+        android:textColor="@color/tabtextcolor" />
+
+    <TextView
+        android:id="@+id/rem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/divider1"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/divider1"
+        android:gravity="center_vertical"
+        android:text="Remind?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/tabtextcolor" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/rem"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/rem"
+        android:button="@drawable/checkbox_selector" />
+
+    <View
+        android:id="@+id/blankspace"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/mainttype" />
+
+    <TextView
+        android:id="@+id/forDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/blankspace"
+        android:layout_below="@id/mainttype"
+        android:layout_toRightOf="@id/blankspace"
+        android:gravity="center_vertical"
+        android:text="Date? "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/tabtextcolor" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/forDate"
+        android:layout_toRightOf="@id/forDate"
+        android:layout_toStartOf="@id/mainttypespinner"
+        android:button="@drawable/checkbox_selector"
+        android:textColor="@color/tabtextcolor" />
+
+    <EditText
+        android:id="@+id/odoInterval"
+        style="@style/EditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/checkBox2"
+        android:layout_below="@id/mainttypespinner"
+        android:layout_toRightOf="@id/checkBox2"
+        android:hint="Reminder interval"
+        android:numeric="integer"
+        android:textColor="@color/tabtextcolor" />
+
+    <Spinner
+        android:id="@+id/dateIntervalNumber"
+        style="@style/SpinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/checkBox2"
+        android:layout_below="@id/mainttypespinner"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/checkBox2" />
+
+    <Spinner
+        android:id="@+id/dateIntervalType"
+        style="@style/SpinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/checkBox2"
+        android:layout_below="@id/mainttypespinner"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/dateIntervalNumber" />
+
+    <TextView
+        android:id="@+id/kmlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/odoInterval"
+        android:layout_below="@id/mainttype"
+        android:layout_toRightOf="@id/odoInterval"
+        android:text="km&apos;s"
+        android:textColor="@color/tabtextcolor" />
+
+    <TextView
+        android:id="@+id/fuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fueltext"
+        android:layout_below="@id/blankspace"
+        android:layout_toStartOf="@id/mainttypespinner"
+        android:text="Fuel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/tabtextcolor" />
+
+    <EditText
+        android:id="@+id/fueltext"
+        style="@style/EditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mainttypespinner"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/blankspace"
+        android:layout_toRightOf="@id/fuel"
+        android:hint="Amount?"
+        android:inputType="numberDecimal"
+        android:textColor="@color/tabtextcolor" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/memotext"
+        android:layout_below="@id/fuel"
+        android:layout_toStartOf="@id/mainttypespinner"
+        android:text="Memo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/tabtextcolor" />
+
+    <EditText
+        android:id="@+id/memotext"
+        style="@style/EditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mainttypespinner"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/fueltext"
+        android:layout_toRightOf="@id/memo"
+        android:hint="Details?"
+        android:textColor="@color/tabtextcolor" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/odo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/odotext"
+        android:layout_below="@id/memo"
+        android:layout_toStartOf="@id/memotext"
+        android:gravity="left"
+        android:text="Odo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/tabtextcolor" />
+
+    <EditText
+        android:id="@+id/odotext"
+        style="@style/EditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mainttypespinner"
+        android:layout_below="@id/memotext"
+        android:layout_toRightOf="@id/odo"
+        android:ems="4"
+        android:hint="Odo"
+        android:inputType="number"
+        android:textColor="@color/tabtextcolor" />
+
+    <TextView
+        android:id="@+id/cashLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/odotext"
+        android:layout_below="@id/memotext"
+        android:layout_toRightOf="@id/odotext"
+        android:ems="1"
+        android:text="$:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/cashcolor" />
+
+    <EditText
+        android:id="@+id/cash"
+        style="@style/EditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/cashLabel"
+		android:ems="5"
+        android:layout_toRightOf="@id/cashLabel"
+        android:inputType="numberDecimal"
+        android:textColor="@color/tabtextcolor" />
+
+    <TextView
+        android:id="@+id/perLitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/cashLabel"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/cash"
+        android:inputType="numberDecimal"
+        android:text="/l"
+        android:textColor="@color/tabtextcolor" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/datepick"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/odo"
+        android:layout_toLeftOf="@id/odotext"
+        android:gravity="left|center_vertical"
+        android:text="When"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/tabtextcolor" />
+
+    <DatePicker
+        android:id="@+id/datepick"
+        style="@style/DateStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/odotext"
+        android:layout_toRightOf="@id/odo"
+        android:calendarViewShown="false" >
+    </DatePicker>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <Button
+            android:id="@+id/create"
+            style="@style/BlackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="createLog"
+            android:text="Create" />
+
+        <TextView
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/databackgroundColor"
+            android:textColor="@color/tabtextcolor" />
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/BlackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="cancelLog"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/user/StudioProjects/MotorcycleMaintenanceLog_work/app/src/main/res/layout/activity_new_log.xml -->

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+        <item
+        android:id="@+id/menu_elem"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Delete maint. element"/> 
+        
+        <item
+        android:id="@+id/menu_add_maintenance_type"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="Delete maint. type"/> 
+        
+
+    
+</menu>

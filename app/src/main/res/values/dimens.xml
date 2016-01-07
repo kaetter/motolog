@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="tab_padding">0dp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_default">17sp</dimen>
+    <dimen name="list_item_height">30dp</dimen>
+
+</resources>
